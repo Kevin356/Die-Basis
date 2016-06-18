@@ -115,4 +115,13 @@ switch(_type) do
 		ctrlShow[888900,true];
 		closeDialog 887890;
 	};
+	//CopMsgAll
+	case 9:
+	{
+		if((call life_coplevel) < 1) exitWith {hintSilent "Du bist noch nicht dazu Berechtigt!";};
+		if(_msg == "") exitWith {hintSilent "Du musst eine Nachricht eingeben!";};
+		[ObjNull, _msg, player, 7] remoteExecCall ["TON_fnc_handleMessages", 2];
+		hintSilent format["COP Message Sent To All: %1",_msg];
+		closeDialog 887890;
+	};
 };
