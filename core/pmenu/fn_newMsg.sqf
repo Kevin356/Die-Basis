@@ -124,4 +124,13 @@ switch(_type) do
 		hintSilent format["COP Message Sent To All: %1",_msg];
 		closeDialog 887890;
 	};
+	//ADACMsgAll
+	case 10:
+	{
+		if((call life_mediclevel) < 1) exitWith {hintSilent "Du bist noch nicht dazu Berechtigt!";};
+		if(_msg == "") exitWith {hintSilent "Du musst eine Nachricht eingeben!";};
+		[ObjNull, _msg, player, 8] remoteExecCall ["TON_fnc_handleMessages", 2];
+		hintSilent format["ADAC Message Sent To All: %1",_msg];
+		closeDialog 887890;
+	};
 };
