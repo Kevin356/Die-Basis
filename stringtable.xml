@@ -376,6 +376,14 @@
 			<Italian>Msg ADAC</Italian>
 			<Portuguese>Chamar ADAC</Portuguese>
 		</Key>
+			<Key ID="STR_CELL_CopMSGALL">
+			<Original>Cop Msg all</Original>
+			<English>Cop Msg All</English>
+			<German>Cop Msg All</German>
+			<French>Cop Msg All</French>
+			<Italian>Cop Msg All</Italian>
+			<Portuguese>Cop Msg All</Portuguese>
+		</Key>
 	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
